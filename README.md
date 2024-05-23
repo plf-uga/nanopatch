@@ -1,8 +1,8 @@
 # Step by step to prepare Alves Lab's nano enviroment
-# Update apt-get and linux utilities 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install curl
+# Update apt-get and linux utilities   
+sudo apt-get update  
+sudo apt-get upgrade  
+sudo apt-get install curl  
 
 # Install pip in Python3  
 sudo apt-get install python3-pip
