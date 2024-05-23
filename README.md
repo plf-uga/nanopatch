@@ -1,4 +1,4 @@
-#Step by step to prepare Alves Lab's nano enviroment
+# Step by step to prepare Alves Lab's nano enviroment
 # Update apt-get and linux utilities 
 sudo apt-get update
 sudo apt-get upgrade
