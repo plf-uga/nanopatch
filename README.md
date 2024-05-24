@@ -24,8 +24,8 @@ git clone https://github.com/plf-uga/capture_IPCAM.git
 git clone https://github.com/plf-uga/rs_capture.git  
 git clone https://github.com/plf-uga/upload_py.git  
 
-## Secret client tokens for upload_py can be found at alveslabnanos@gmail.com  
-## Copy and paste all the files in the folder upload_py  
+ **Secret client tokens for upload_py can be found at alveslabnanos@gmail.com**   
+ Copy and paste all the files in the folder upload_py  
 
 # Give Permissions for Programs to Run  
 cd capture_rs  
@@ -36,14 +36,14 @@ chmod +x upload.py
 chmod +x down_token.sh  
 
 # Compile the rs_capture.cpp program   
-## Go to the rs_capture folder (cd rs_capture)  
+Go to the rs_capture folder (cd rs_capture)  
 g++ -std=c++11 rs_capture.cpp -lrealsense2 -o rs-shot.exe  
 
 # Setting up remote access  
-## Create a gmail account for the nano  
-## Link the nano with Dataplicity  
-## Enter the email address in the following URL: https://www.dataplicity.com/  
-## Follow the website instructions  
+Create a gmail account for the nano  
+Link the nano with Dataplicity  
+Enter the email address in the following URL: https://www.dataplicity.com/  
+Follow the website instructions  
 
 
 
