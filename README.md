@@ -45,17 +45,16 @@ Link the nano with Dataplicity
 Enter the email address in the following URL: https://www.dataplicity.com/  
 Follow the website instructions
 
-# Examples on how to shchedulle tasks on Linux environment
-crontab -e #Opens the crontab file
-SHELL=/bin/bash
-PATH = /bin:/sbin:/usr/bin:/usr/sbin
-
-45 02 * * * /home/alveslab/capture_cam1/run.sh 
-46 02 * * * /home/alveslab/capture_cam2/run.sh
-45 13 * * * /home/alveslab/capture_cam1/run.sh
-46 13 * * * /home/alveslab/capture_cam2/run.sh
-45 23 * * * /home/alveslab/upload_py/down_token.sh
-05 00 * * * /usr/bin/python3.6 /home/alveslab/upload_py/upload.py >> /home/alveslab/upload.log 2>&1  
+# Examples on how to shchedulle tasks on Linux environment   
+crontab -e #Opens the crontab file  
+SHELL=/bin/bash  
+PATH = /bin:/sbin:/usr/bin:/usr/sbin  
+45 02 * * * /home/alveslab/capture_cam1/run.sh   
+46 02 * * * /home/alveslab/capture_cam2/run.sh  
+45 13 * * * /home/alveslab/capture_cam1/run.sh  
+46 13 * * * /home/alveslab/capture_cam2/run.sh  
+45 23 * * * /home/alveslab/upload_py/down_token.sh  
+05 00 * * * /usr/bin/python3.6 /home/alveslab/upload_py/upload.py >> /home/alveslab/upload.log 2>&1    
 
 
 
