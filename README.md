@@ -3,7 +3,9 @@
 <img src="https://github.com/user-attachments/assets/7f2b103f-fa43-4f78-ba2c-d38969a5a187" alt="Tux svg" width="120"/>
 <img src="https://github.com/user-attachments/assets/44dde777-4daa-4434-9855-7ce7259c2e9c" alt="Tux svg" width="120"/height = "130"/>
 <img src="https://github.com/user-attachments/assets/44c30918-848b-4b8c-8724-c5d4a134fd29" alt="Tux svg" width="130"/, height = "130"/>    
-<img scr="https://github.com/user-attachments/assets/d68bfd53-2241-4905-bf41-d8de9e694277" alt="Tux svg" width="120"/>
+
+![RtNrs](https://github.com/user-attachments/assets/8d974a26-2720-40b7-9b42-daf8303cc0c9)
+
 
 This guide walks you through preparing a Jetson Nano for camera-based data collection and remote uploads.
 
