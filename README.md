@@ -72,10 +72,11 @@ Enter the email and follow the on-screen instructions to link the device.
 crontab -e
 ```
 
-SHELL=/bin/bash
-PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
 
 ```bash
+SHELL=/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
 # Daily captures
 45 02 * * * /home/alveslab/capture_cam1/run.sh
 46 02 * * * /home/alveslab/capture_cam2/run.sh
@@ -85,7 +86,6 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin
 # Token refresh and upload
 45 23 * * * /home/alveslab/upload_py/down_token.sh
 05 00 * * * /usr/bin/python3.6 /home/alveslab/upload_py/upload.py >> /home/alveslab/upload.log 2>&1
-
 ```
 
 ### 📦 9. Special Instructions for Sub-Versions (16GB Storage)
