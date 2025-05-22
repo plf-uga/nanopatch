@@ -63,40 +63,40 @@ Due to a shortage of Jetson Nanos, we are currently using sub-versions that alre
 The following pre-steps will be necessary.
 
 ## 1. Add new user
-  sudo adduser <username>
+  sudo adduser <username>  
   usermod -aG sudo <username>
 
 ## 2. Mount an SD card permanently
-   Run the following commands below:
+   Run the following commands:
 
    2.1 Install nano command:
-     sudo apt-get install nano
-   2.2 Identify the SD Card Device:
-     lsblk
-   2.3  Create a directory where you will mount the SD card
-     sudo mkdir -p /mnt/external
-   2.4  Edit /etc/fstab to Mount on Boot
-     sudo nano /etc/fstab
-   2.5  Edit /etc/fstab to Mount on Boot 
-    assuming ext4 format: /dev/<name_of_card_on_system>    /mnt/external    ext4    defaults,exec    0    0
-    assuming FAT32 format: /dev/<name_of_card_on_system>    /mnt/external    vfat    defaults,exec,uid=1000,gid=1000    0    0
-    assuming exFAT format: /dev/sdb1    /mnt/<name_of_card_on_system   exfat    defaults,exec,uid=1000,gid=1000    0    0
+     sudo apt-get install nano  
+   2.2 Identify the SD Card Device:  
+     lsblk  
+   2.3  Create a directory where you will mount the SD card  
+     sudo mkdir -p /mnt/external  
+   2.4  Edit /etc/fstab to Mount on Boot  
+     sudo nano /etc/fstab  
+   2.5  Edit /etc/fstab to Mount on Boot   
+    assuming ext4 format: /dev/<name_of_card_on_system>    /mnt/external    ext4    defaults,exec    0    0  
+    assuming FAT32 format: /dev/<name_of_card_on_system>    /mnt/external    vfat    defaults,exec,uid=1000,gid=1000    0    0  
+    assuming exFAT format: /dev/sdb1    /mnt/<name_of_card_on_system   exfat    defaults,exec,uid=1000,gid=1000    0    0  
 
-  You can check the name of the card using the command: lsblk -f
-  generally is something like mmcblk0p1 or sdb1
+  You can check the name of the card using the command: lsblk -f  
+  generally is something like mmcblk0p1 or sdb1  
 
-  You will also need the card ID to edit the /etc/fstab. Run the following: 
-  sudo blkid
+  You will also need the card ID to edit the /etc/fstab. Run the following:   
+  sudo blkid  
 
-  2.6. After editing the /etc/fstab file, run the following: 
+  2.6. After editing the /etc/fstab file, run the following:   
   sudo mount -a
-  2.7 Give executable permission if needed: 
-  sudo chmod -R +x /mnt/external
+  2.7 Give executable permission if needed:   
+  sudo chmod -R +x /mnt/external  
 
-  2.7. Confirm if the drive was mounted correctly: 
-    mount | grep external
-    or
-    findmnt /mnt/sdcard
+  2.7. Confirm if the drive was mounted correctly:   
+    mount | grep external  
+    or  
+    findmnt /mnt/sdcard  
 
 
 
