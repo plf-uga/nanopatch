@@ -1,6 +1,6 @@
 # Alves Lab – Jetson Nano Environment Setup Guide
 
-![Tux svg](https://github.com/user-attachments/assets/7f2b103f-fa43-4f78-ba2c-d38969a5a187)
+<img src="https://github.com/user-attachments/assets/7f2b103f-fa43-4f78-ba2c-d38969a5a187" alt="Tux svg" width="120"/>
 
 This guide walks you through preparing a Jetson Nano for camera-based data collection and remote uploads.
 
